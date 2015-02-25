@@ -1,0 +1,221 @@
+$lf-background-color: #f9f9f9;
+$lf-text-color: black;
+$lf-inverse-background-color: black;
+$lf-inverse-text-color: white;
+
+//$lf-headline-font: ;
+//$lf-reading-font: ;
+
+//$lf-column-width: ;
+
+$lf-page-margin-v: 80px;
+$lf-page-margin-h: 0;
+
+$lf-line-height: 1.5;
+
+%is-inverted {
+  background-color: $lf-inverse-background-color;
+  color: $lf-inverse-text-color;
+}
+
+%is-indented {
+
+
+  p {
+    text-indent: 50px;
+    margin-bottom: 0;
+  }
+}
+
+%is-marginated {
+
+  p {
+    text-indent: 0;
+    margin-bottom: 50px; //variable needed
+  }
+}
+
+
+%is-hyphenated {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+%is-justified {
+  @extend %is-hyphenated;
+  text-align: justify;
+}
+
+
+
+.longform-wrapper {
+
+
+
+  background-color: $lf-background-color;
+
+
+}
+
+.longform {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: $lf-page-margin-v $lf-page-margin-h;
+
+  font-family: 'hoefler text', Georgia, 'Times New Roman', Times, Serif;
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 18px;
+
+/*
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+
+  	em,
+  	.txt-em {
+  	font-family: ;
+
+  		strong,
+  		.txt-strong {
+  		font-family: ;
+  		}
+  	}
+
+  	strong,
+  	.txt-strong {
+  	font-family: ;
+
+  		em,
+  		.txt-em {
+  		font-family: ;
+  		}
+  	}
+  }
+
+  h1 {
+  font-size: ;
+  }
+
+  h2 {
+  font-size: ;
+  }
+
+  h3 {
+  font-size: ;
+  }
+
+  h4 {
+  font-size: ;
+  }
+
+  h5 {
+  font-size: ;
+  }
+
+  h6 {
+  font-size: ;
+  }
+*/
+
+  p {
+  margin-bottom: $lf-line-height;
+  text-indent: 50px;
+
+  	a {
+  	color: inherit;
+  	text-decoration: none;
+
+
+  		&:hover {
+        color: inherit;
+  		}
+
+  		&:active {
+        color: inherit;
+  		}
+
+  		&:visited {
+        color: inherit;
+  		}
+
+  		&:last-of-type {
+    		margin-bottom: 0;
+  		}
+  	}
+
+/*
+  	ol {
+
+  		li {
+
+  		}
+  	}
+
+  	ul {
+
+  		li {
+
+  		}
+  	}
+
+  	br {
+
+  	}
+*/
+
+/*
+  	em,
+  	.txt-em {
+
+  		strong
+  		.txt-strong {
+
+  		}
+  	}
+
+  	strong,
+  	.txt-strong {
+
+  		em,
+  		.txt-em {
+
+  		}
+  	}
+*/
+  }
+
+/*
+  blockquote {
+
+  	p {
+
+  	}
+  }
+
+  em,
+  .txt-em {
+
+  	strong
+  	.txt-strong {
+
+  	}
+  }
+
+  strong,
+  .txt-strong {
+  font-weight: normal;
+
+  	em,
+  	.txt-em {
+  	font-style: normal;
+  	}
+  }
+*/
+
+
+}
